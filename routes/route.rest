@@ -1,0 +1,25 @@
+GET http://localhost:4000/subscribers
+
+###
+GET http://localhost:4000/subscribers/61186125a811b8736888b743
+
+###
+
+POST http://localhost:4000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Amazing Person",
+    "subscribedToChannel": "WDS"    
+}
+
+###
+DELETE http://localhost:4000/subscribers/61185a9022a06755b8cfd79b
+
+###
+PATCH http://localhost:4000/subscribers/61186125a811b8736888b743
+Content-Type: application/json
+
+{
+    "name": "New Name"
+}
